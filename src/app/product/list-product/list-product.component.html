@@ -4,12 +4,14 @@
     <th>Name</th>
     <th>Price</th>
     <th>Description</th>
+    <th>Action</th>
   </tr>
   <ng-container *ngFor="let product of products">
     <tr>
       <td>{{product.name}}</td>
       <td>{{product.price}}</td>
       <td>{{product.description}}</td>
+      <td><a [routerLink]="['/update-product/',product.id]">Edit</a></td>
     </tr>
   </ng-container>
 </table>
