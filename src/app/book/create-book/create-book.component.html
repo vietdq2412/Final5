@@ -1,0 +1,21 @@
+<h1>Create New Book</h1>
+<form (ngSubmit)="createBook()">
+  <table>
+    <tr>
+      <td>Tên sách:</td>
+      <td><input type="text" name="title" [(ngModel)]="book.title"></td>
+    </tr>
+    <tr>
+      <td>Tác giả:</td>
+      <td><input type="text" name="author" [(ngModel)]="book.author"></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" name="description" [(ngModel)]="book.description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Submit</button></td>
+    </tr>
+  </table>
+</form>

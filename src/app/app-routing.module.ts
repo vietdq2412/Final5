@@ -1,23 +1,23 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {CreateProductComponent} from './product/create-product/create-product.component';
-import {ListProductComponent} from './product/list-product/list-product.component';
-import {UpdateProductComponent} from './product/update-product/update-product.component';
-import {DeleteProductComponent} from './product/delete-product/delete-product.component';
+import {CreateBookComponent} from './book/create-book/create-book.component';
+import {ListBookComponent} from './book/list-book/list-book.component';
+import {UpdateBookComponent} from './book/update-book/update-book.component';
+import {DetailBookComponent} from './book/detail-book/detail-book.component';
 
 
 const routes: Routes = [{
-  path: 'create-product',
-  component: CreateProductComponent
+  path: 'create-book',
+  component: CreateBookComponent
 }, {
-  path: 'list-product',
-  component: ListProductComponent
+  path: 'list-book',
+  component: ListBookComponent
 }, {
-  path: 'update-product/:id',
-  component: UpdateProductComponent
+  path: 'update-book/:id',
+  component: UpdateBookComponent
 }, {
-  path: 'delete-product/:id',
-  component: DeleteProductComponent
+  path: 'detail-book/:id',
+  component: DetailBookComponent
 }];
 
 @NgModule({

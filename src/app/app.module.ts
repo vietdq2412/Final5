@@ -3,20 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreateProductComponent } from './product/create-product/create-product.component';
+import { CreateBookComponent } from './book/create-book/create-book.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
-import { ListProductComponent } from './product/list-product/list-product.component';
-import { UpdateProductComponent } from './product/update-product/update-product.component';
-import { DeleteProductComponent } from './product/delete-product/delete-product.component';
+import { ListBookComponent } from './book/list-book/list-book.component';
+import { UpdateBookComponent } from './book/update-book/update-book.component';
+import { DetailBookComponent } from './book/detail-book/detail-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateProductComponent,
-    ListProductComponent,
-    UpdateProductComponent,
-    DeleteProductComponent
+    CreateBookComponent,
+    ListBookComponent,
+    UpdateBookComponent,
+    DetailBookComponent,
   ],
   imports: [
     BrowserModule,

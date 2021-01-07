@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Update Book Info</h1>
+  <form (ngSubmit)="updateBook(id)">
+    <table>
+      <tr>
+        <td>Tên sách:</td>
+        <td><input type="text" name="name" [(ngModel)]="book.title"></td>
+      </tr>
+      <tr>
+        <td>Tác giả:</td>
+        <td><input type="text" name="price" [(ngModel)]="book.author"></td>
+      </tr>
+      <tr>
+        <td>Description:</td>
+        <td>
+          <textarea name="description" id="" cols="30" rows="10" [(ngModel)]="book.description"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="btn btn-primary">Submit</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+

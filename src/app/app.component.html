@@ -1,4 +1,18 @@
-<h1>Hello C0720I2</h1>
-<a [routerLink]="['/create-product']">Create new</a>
-<a [routerLink]="['/list-product']">List Product</a>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div style="float: left">
+    <button><a [routerLink]="['/create-book']">Create new</a></button>
+    <button><a [routerLink]="['/list-book']">List Book</a></button>
+  </div>
+</nav>
+<hr>
 <router-outlet></router-outlet>
+<hr>
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://www.facebook.com/ViZzzz2">Facebook</a>
+  </div>
+  <!-- Copyright -->
+</footer>
