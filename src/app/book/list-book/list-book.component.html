@@ -5,12 +5,12 @@
     <th>Tác giả</th>
     <th colspan="2">#</th>
   </tr>
-  <ng-container *ngFor="let product of books">
+  <ng-container *ngFor="let book of books">
     <tr>
-      <td><a [routerLink]="['/detail-book/',product.id]"><td>{{product.title}}</td></a>
-      <td>{{product.author}}</td>
-      <td><button><a [routerLink]="['/update-book/',product.id]">Edit</a></button></td>
-      <td><button (click)="deleteBook(product.id)">Delete</button></td>
+      <a [routerLink]="['/detail-book/',book.id]"><td>{{book.title}}</td></a>
+      <td>{{book.author}}</td>
+      <td><button><a [routerLink]="['/update-book/',book.id]">Edit</a></button></td>
+      <td><button (click)="deleteBook(book.id)">Delete</button></td>
     </tr>
   </ng-container>
 </table>

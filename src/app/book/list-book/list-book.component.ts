@@ -10,7 +10,7 @@ import {BookService} from '../../service/book/book.service';
 export class ListBookComponent implements OnInit {
   books: Book[] = [];
 
-  constructor(private productService: BookService) {
+  constructor(private bookService: BookService) {
   }
 
   ngOnInit() {
@@ -18,13 +18,13 @@ export class ListBookComponent implements OnInit {
   }
 
   getAllProduct() {
-    this.productService.getAllBook().subscribe(result => {
+    this.bookService.getAllBook().subscribe(result => {
       this.books = result;
     }, error => console.log(error));
   }
 
   deleteBook(id) {
-    this.productService.deleteBookById(id).subscribe(() => {
+    this.bookService.deleteBookById(id).subscribe(() => {
         alert('Xoá thành công');
         this.getAllProduct();
       },
